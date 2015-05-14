@@ -42,10 +42,22 @@ module ScriptManager =
             MvcHtmlString(sw.ToString())
         | _ -> MvcHtmlString("")
 
-type Filter(?siteletsOverrideMvc: bool, ?rpcModuleName: string, ?siteletsModuleName: string) =
-    let rpcModuleName = defaultArg rpcModuleName "WebSharper.RemotingModule"
-    let siteletsModuleName = defaultArg siteletsModuleName "WebSharper.Sitelets"
-    let siteletsOverrideMvc = defaultArg siteletsOverrideMvc true
+/// <summary>
+/// Create a filter that enables WebSharper sitelets and remoting.
+/// </summary>
+type Filter() =
+
+    /// When both the sitelet and ASP.NET MVC accept a URL, the sitelet is served.
+    /// Default: true
+    member val SiteletsOverrideMvc = true with get, set
+
+    /// The name of the WebSharper sitelets module declared in Web.config.
+    /// Default: "WebSharper.Sitelets"
+    member val SiteletsModuleName = "WebSharper.Sitelets" with get, set
+
+    /// The name of the WebSharper remoting module declared in Web.config.
+    /// Default: "WebSharper.RemotingModule"
+    member val RemotingModuleName = "WebSharper.RemotingModule" with get, set
 
     interface IAuthorizationFilter with
 
@@ -58,49 +70,12 @@ type Filter(?siteletsOverrideMvc: bool, ?rpcModuleName: string, ?siteletsModuleN
                             member this.ExecuteResult(_) =
                                 Async.RunSynchronously run })
             let isRemoting =
-                match httpCtx.ApplicationInstance.Modules.[rpcModuleName] with
+                match httpCtx.ApplicationInstance.Modules.[this.RemotingModuleName] with
                 | :? Web.RpcModule as m ->
                     tryRun (m.TryProcessRequest httpCtx) |> Option.isSome
                 | _ -> false
-            if siteletsOverrideMvc && not isRemoting then
-                match httpCtx.ApplicationInstance.Modules.[siteletsModuleName] with
+            if this.SiteletsOverrideMvc && not isRemoting then
+                match httpCtx.ApplicationInstance.Modules.[this.SiteletsModuleName] with
                 | :? Sitelets.HttpModule as m ->
                     tryRun (m.TryProcessRequest httpCtx) |> ignore
                 | _ -> ()
-
-    // Constructors intended for C#, which doesn't like F#'s optional attributes.
-
-    /// <summary>
-    /// Create a filter that enables WebSharper sitelets and remoting.
-    /// </summary>
-    new () =
-        new Filter(?siteletsOverrideMvc = Some true)
-
-    /// <summary>
-    /// Create a filter that enables WebSharper sitelets and remoting.
-    /// </summary>
-    /// <param name="siteletsOverrideMvc">When both the sitelet and ASP.NET MVC accept a URL, the sitelet is served. (default: true)</param>
-    new (siteletsOverrideMvc: bool) =
-        new Filter(?siteletsOverrideMvc = Some siteletsOverrideMvc)
-
-    /// <summary>
-    /// Create a filter that enables WebSharper sitelets and remoting.
-    /// </summary>
-    /// <param name="rpcModuleName">The name of the WebSharper remoting module declared in Web.config. (default: WebSharper.RemotingModule)</param>
-    /// <param name="siteletsModuleName">The name of the WebSharper sitelets module declared in Web.config. (default: WebSharper.Sitelets)</param>
-    new (rpcModuleName: string, siteletsModuleName: string) =
-        new Filter(
-            ?rpcModuleName = Some rpcModuleName,
-            ?siteletsModuleName = Some siteletsModuleName)
-
-    /// <summary>
-    /// Create a filter that enables WebSharper sitelets and remoting.
-    /// </summary>
-    /// <param name="siteletsOverrideMvc">When both the sitelet and ASP.NET MVC accept a URL, the sitelet is served. (default: true)</param>
-    /// <param name="rpcModuleName">The name of the WebSharper remoting module declared in Web.config. (default: WebSharper.RemotingModule)</param>
-    /// <param name="siteletsModuleName">The name of the WebSharper sitelets module declared in Web.config. (default: WebSharper.Sitelets)</param>
-    new (siteletsOverrideMvc: bool, rpcModuleName: string, siteletsModuleName: string) =
-        new Filter(
-            ?siteletsOverrideMvc = Some siteletsOverrideMvc,
-            ?rpcModuleName = Some rpcModuleName,
-            ?siteletsModuleName = Some siteletsModuleName)
