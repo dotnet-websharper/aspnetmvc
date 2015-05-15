@@ -1,7 +1,9 @@
 #load "tools/includes.fsx"
 open IntelliFactory.Build
 
-let bt = BuildTool().PackageId("WebSharper.AspNetMvc", "3.0-alpha")
+let bt =
+    BuildTool().PackageId("WebSharper.AspNetMvc")
+        .VersionFrom("WebSharper")
 
 let main =
     bt.WebSharper.Library("WebSharper.AspNetMvc")
