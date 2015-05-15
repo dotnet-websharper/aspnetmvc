@@ -4,6 +4,7 @@ open IntelliFactory.Build
 let bt =
     BuildTool().PackageId("WebSharper.AspNetMvc")
         .VersionFrom("WebSharper")
+        .WithFramework(fun fw -> fw.Net40)
 
 let main =
     bt.WebSharper.Library("WebSharper.AspNetMvc")
