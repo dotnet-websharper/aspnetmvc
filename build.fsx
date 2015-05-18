@@ -13,7 +13,7 @@ let main =
             [
                 r.Assembly("System.Web")
                 r.Assembly("System.ComponentModel.DataAnnotations")
-                r.NuGet("Microsoft.AspNet.Mvc").Version("[4.0,5.0)").Reference()
+                r.NuGet("Microsoft.AspNet.Mvc").Version("[4.0.30506]").Reference()
             ])
 
 bt.Solution [
