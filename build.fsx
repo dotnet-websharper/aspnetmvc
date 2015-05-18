@@ -13,7 +13,7 @@ let main =
             [
                 r.Assembly("System.Web")
                 r.Assembly("System.ComponentModel.DataAnnotations")
-                r.NuGet("Microsoft.AspNet.Mvc").Version("4.0.30506.0").Reference()
+                r.NuGet("Microsoft.AspNet.Mvc").Version("[4.0,5.0)").Reference()
             ])
 
 bt.Solution [
@@ -25,8 +25,9 @@ bt.Solution [
                 Title = Some "WebSharper.AspNetMvc"
                 LicenseUrl = Some "http://websharper.com/licensing"
                 ProjectUrl = Some "https://github.com/intellifactory/websharper.aspnetmvc"
-                Description = "WebSharper module for ASP.NET MVC 4"
+                Description = "WebSharper module for ASP.NET MVC"
                 RequiresLicenseAcceptance = true })
+        .AddDependency("Microsoft.AspNet.Mvc", "[4.0,6.0)")
         .Add(main)
 ]
 |> bt.Dispatch
