@@ -38,7 +38,6 @@ module ScriptManager =
             use sw = new StringWriter()
             use tw = new UI.HtmlTextWriter(sw)
             sm.RenderControl(tw)
-            let c = new System.Web.UI.Control()
             MvcHtmlString(sw.ToString())
         | _ -> MvcHtmlString("")
 
