@@ -16,7 +16,7 @@ module ScriptManager =
     /// </summary>
     /// <param name="control">The control to render.</param>
     /// <returns>The code to insert the control in the page.</returns>
-    let Register (control: Html.Client.IControl) =
+    let Register (control: IControl) =
         let items = HttpContext.Current.Items
         let sm =
             match items.[smKey] with
