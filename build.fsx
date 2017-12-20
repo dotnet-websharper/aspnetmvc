@@ -3,12 +3,12 @@ open IntelliFactory.Build
 
 let bt =
     BuildTool().PackageId("WebSharper.AspNetMvc")
-        .VersionFrom("WebSharper", versionSpec = "(,4.0)")
+        .VersionFrom("WebSharper")
         .WithFSharpVersion(FSharpVersion.FSharp30)
         .WithFramework(fun fw -> fw.Net40)
 
 let main =
-    bt.WebSharper.Library("WebSharper.AspNetMvc")
+    bt.WebSharper4.Library("WebSharper.AspNetMvc")
         .SourcesFromProject()
         .References(fun r ->
             [

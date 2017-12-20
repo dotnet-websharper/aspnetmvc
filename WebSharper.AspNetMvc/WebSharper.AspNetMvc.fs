@@ -5,6 +5,7 @@ open System.Runtime.CompilerServices
 open System.Web
 open System.Web.Mvc
 open WebSharper
+open WebSharper.Web
 
 module ScriptManager =
 
@@ -25,7 +26,7 @@ module ScriptManager =
                 let sm = new Web.ScriptManager()
                 items.[smKey] <- sm
                 sm
-        let id = sm.Register (Some control.Id) control
+        let id = sm.Register(Some control.Id, control, Shared.Metadata, Shared.Json)
         MvcHtmlString("<div id=\"" + id + "\"></div>")
 
     /// <summary>
