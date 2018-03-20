@@ -3,10 +3,43 @@ source https://api.nuget.org/v3/index.json
 source https://nuget.intellifactory.com/nuget username: "%IF_USER%" password: "%IF_PASS%"
 
 storage: none
+framework: net461
 
 nuget WebSharper prerelease
 nuget WebSharper.FSharp prerelease
+nuget WebSharper.CSharp prerelease
 nuget Microsoft.AspNet.Mvc 4.0.30506
+nuget FSharp.Core ~> 4.2.0
+nuget WebSharper.UI
+nuget WebSharper.UI.CSharp
+
+group test
+    framework: net461
+    source https://api.nuget.org/v3/index.json
+
+    nuget Antlr 3.4.1.9004 restriction: >= net461
+    nuget bootstrap 3.0.0 restriction: >= net461
+    nuget jQuery 1.10.2 restriction: >= net461
+    nuget jQuery.Validation 1.11.1 restriction: >= net461
+    nuget Microsoft.ApplicationInsights 2.2.0 restriction: >= net461
+    nuget Microsoft.ApplicationInsights.Agent.Intercept 2.0.6 restriction: >= net461
+    nuget Microsoft.ApplicationInsights.DependencyCollector 2.2.0 restriction: >= net461
+    nuget Microsoft.ApplicationInsights.PerfCounterCollector 2.2.0 restriction: >= net461
+    nuget Microsoft.ApplicationInsights.Web 2.2.0 restriction: >= net461
+    nuget Microsoft.ApplicationInsights.WindowsServer 2.2.0 restriction: >= net461
+    nuget Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel 2.2.0 restriction: >= net461
+    nuget Microsoft.AspNet.Mvc 5.2.3 restriction: >= net461
+    nuget Microsoft.AspNet.Razor 3.2.3 restriction: >= net461
+    nuget Microsoft.AspNet.Web.Optimization 1.1.3 restriction: >= net461
+    nuget Microsoft.AspNet.WebPages 3.2.3 restriction: >= net461
+    nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform 1.0.8 restriction: >= net461
+    nuget Microsoft.jQuery.Unobtrusive.Validation 3.2.3 restriction: >= net461
+    nuget Microsoft.Net.Compilers 2.4.0 restriction: >= net461
+    nuget Microsoft.Web.Infrastructure 1.0.0.0 restriction: >= net461
+    nuget Modernizr 2.6.2 restriction: >= net461
+    nuget Newtonsoft.Json 6.0.4 restriction: >= net461
+    nuget Respond 1.2.0 restriction: >= net461
+    nuget WebGrease 1.5.2 restriction: >= net461
 
 group build
     framework: net45

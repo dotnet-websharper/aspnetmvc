@@ -1,0 +1,30 @@
+FSharp.Core
+WebSharper
+WebSharper.CSharp
+WebSharper.UI
+WebSharper.UI.CSharp
+
+group test
+    Antlr
+    bootstrap
+    jQuery
+    jQuery.Validation
+    Microsoft.ApplicationInsights
+    Microsoft.ApplicationInsights.Agent.Intercept
+    Microsoft.ApplicationInsights.DependencyCollector
+    Microsoft.ApplicationInsights.PerfCounterCollector
+    Microsoft.ApplicationInsights.Web
+    Microsoft.ApplicationInsights.WindowsServer
+    Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel
+    Microsoft.AspNet.Mvc
+    Microsoft.AspNet.Razor
+    Microsoft.AspNet.Web.Optimization
+    Microsoft.AspNet.WebPages
+    Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+    Microsoft.jQuery.Unobtrusive.Validation
+    Microsoft.Net.Compilers
+    Microsoft.Web.Infrastructure
+    Modernizr
+    Newtonsoft.Json
+    Respond
+    WebGrease
