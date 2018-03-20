@@ -1,0 +1,38 @@
+STORAGE: NONE
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    Microsoft.AspNet.Mvc (4.0.30506)
+      Microsoft.AspNet.Razor (>= 2.0.20710)
+      Microsoft.AspNet.WebPages (>= 2.0.20710)
+    Microsoft.AspNet.Razor (3.2.4)
+    Microsoft.AspNet.WebPages (3.2.4)
+      Microsoft.AspNet.Razor (>= 3.2.4 < 3.3)
+      Microsoft.Web.Infrastructure (>= 1.0)
+    Microsoft.Web.Infrastructure (1.0)
+    WebSharper (4.2.6.253)
+    WebSharper.FSharp (4.2.6.253)
+      WebSharper (4.2.6.253)
+
+GROUP build
+RESTRICTION: == net45
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    Chessie (0.6)
+      FSharp.Core
+    FAKE (4.64.11)
+    FSharp.Compiler.Tools (10.0.1)
+    FSharp.Core (4.3.4)
+    Mono.Cecil (0.10.0-beta7)
+    Newtonsoft.Json (11.0.1)
+    Paket.Core (5.141)
+      Chessie (>= 0.6)
+      FSharp.Compiler.Tools
+      FSharp.Core
+      Mono.Cecil (>= 0.10.0-beta6)
+      Newtonsoft.Json
+
+GROUP wsbuild
+
+GIT
+  remote: https://github.com/dotnet-websharper/build-script
+     (1fde3d5c3233c63777f1ec9154ddd2e03b8a5530)

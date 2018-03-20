@@ -4,3 +4,6 @@
 bin/
 obj/
 /build/
+paket-files/
+.fake/
+nuget/*.paket.template

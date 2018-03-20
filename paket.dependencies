@@ -1,0 +1,19 @@
+version 5.142.0
+source https://api.nuget.org/v3/index.json
+source https://nuget.intellifactory.com/nuget username: "%IF_USER%" password: "%IF_PASS%"
+
+storage: none
+
+nuget WebSharper prerelease
+nuget WebSharper.FSharp prerelease
+nuget Microsoft.AspNet.Mvc 4.0.30506
+
+group build
+    framework: net45
+    source https://api.nuget.org/v3/index.json
+
+    nuget FAKE
+    nuget Paket.Core 5.141.0
+
+group wsbuild
+    git https://github.com/dotnet-websharper/build-script

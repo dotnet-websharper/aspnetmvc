@@ -1,34 +1,15 @@
-#load "tools/includes.fsx"
-open IntelliFactory.Build
+#load "paket-files/wsbuild/github.com/dotnet-websharper/build-script/WebSharper.Fake.fsx"
+open Fake
+open WebSharper.Fake
 
-let bt =
-    BuildTool().PackageId("WebSharper.AspNetMvc")
-        .VersionFrom("WebSharper")
-        .WithFSharpVersion(FSharpVersion.FSharp30)
-        .WithFramework(fun fw -> fw.Net40)
+let targets =
+    WSTargets.Default (fun () -> GetSemVerOf "WebSharper" |> ComputeVersion)
+    |> MakeTargets
 
-let main =
-    bt.WebSharper4.Library("WebSharper.AspNetMvc")
-        .SourcesFromProject()
-        .References(fun r ->
-            [
-                r.Assembly("System.Web")
-                r.Assembly("System.ComponentModel.DataAnnotations")
-                r.NuGet("Microsoft.AspNet.Mvc").Version("[4.0.30506]").Reference()
-            ])
+Target "Build" DoNothing
+targets.BuildDebug ==> "Build"
 
-bt.Solution [
-    main
+Target "CI-Release" DoNothing
+targets.CommitPublish ==> "CI-Release"
 
-    bt.NuGet.CreatePackage()
-        .Configure(fun c ->
-            { c with
-                Title = Some "WebSharper.AspNetMvc"
-                LicenseUrl = Some "http://websharper.com/licensing"
-                ProjectUrl = Some "https://github.com/intellifactory/websharper.aspnetmvc"
-                Description = "WebSharper module for ASP.NET MVC"
-                RequiresLicenseAcceptance = true })
-        .AddDependency("Microsoft.AspNet.Mvc", "[4.0,6.0)")
-        .Add(main)
-]
-|> bt.Dispatch
+RunTargetOrDefault "Build"
