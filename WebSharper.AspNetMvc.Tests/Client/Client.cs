@@ -12,7 +12,7 @@ using static WebSharper.UI.Client.Html;
 namespace WebSharper.AspNetMvc.Tests
 {
     [Serializable]
-    public class Client : Web.Control
+    public class ClientControl : Web.Control
     {
         [JavaScript]
         public override IControlBody Body

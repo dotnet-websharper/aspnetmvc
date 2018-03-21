@@ -1,5 +1,6 @@
 ﻿namespace WebSharper.AspNetMvc
 
+open System
 open System.IO
 open System.Runtime.CompilerServices
 open System.Web
@@ -45,11 +46,15 @@ module ScriptManager =
 /// <summary>
 /// Create a filter that enables WebSharper sitelets and remoting.
 /// </summary>
-type Filter() =
+[<Obsolete "Filter is not necessary anymore.">]
+type Filter () =
 
     /// When both the sitelet and ASP.NET MVC accept a URL, the sitelet is served.
     /// Default: true
-    member val SiteletsOverrideMvc = true with get, set
+    [<Obsolete "SiteletsOverrideMvc is moved to WebSharper.Sitelets.HttpModule.OverrideHandler. Set it globally in Application_Start.">]
+    member this.SiteletsOverrideMvc
+        with get() = WebSharper.Sitelets.HttpModule.OverrideHandler
+        and set v = WebSharper.Sitelets.HttpModule.OverrideHandler <- v
 
     /// The name of the WebSharper sitelets module declared in Web.config.
     /// Default: "WebSharper.Sitelets"
@@ -61,21 +66,4 @@ type Filter() =
 
     interface IAuthorizationFilter with
 
-        member this.OnAuthorization(filterCtx) =
-            let httpCtx = filterCtx.HttpContext
-            let tryRun (action: option<Async<unit>>) =
-                action |> Option.map (fun run ->
-                    filterCtx.Result <-
-                        { new ActionResult() with
-                            member this.ExecuteResult(_) =
-                                Async.RunSynchronously run })
-            let isRemoting =
-                match httpCtx.ApplicationInstance.Modules.[this.RemotingModuleName] with
-                | :? Web.RpcModule as m ->
-                    tryRun (m.TryProcessRequest httpCtx) |> Option.isSome
-                | _ -> false
-            if this.SiteletsOverrideMvc && not isRemoting then
-                match httpCtx.ApplicationInstance.Modules.[this.SiteletsModuleName] with
-                | :? Sitelets.HttpModule as m ->
-                    tryRun (m.TryProcessRequest httpCtx) |> ignore
-                | _ -> ()
+        member this.OnAuthorization(_) = ()

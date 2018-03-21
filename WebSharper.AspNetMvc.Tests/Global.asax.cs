@@ -16,6 +16,8 @@ namespace WebSharper.AspNetMvc.Tests
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //WebSharper.Sitelets.HttpModule.OverrideHandler = false;
         }
     }
 }

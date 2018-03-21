@@ -262,97 +262,97 @@
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6.1'">
       <ItemGroup>
         <Reference Include="WebSharper.Collections">
-          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.6.253\lib\net461\WebSharper.Collections.dll</HintPath>
+          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.7.254\lib\net461\WebSharper.Collections.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.Control">
-          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.6.253\lib\net461\WebSharper.Control.dll</HintPath>
+          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.7.254\lib\net461\WebSharper.Control.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.Core">
-          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.6.253\lib\net461\WebSharper.Core.dll</HintPath>
+          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.7.254\lib\net461\WebSharper.Core.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.Core.JavaScript">
-          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.6.253\lib\net461\WebSharper.Core.JavaScript.dll</HintPath>
+          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.7.254\lib\net461\WebSharper.Core.JavaScript.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.InterfaceGenerator">
-          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.6.253\lib\net461\WebSharper.InterfaceGenerator.dll</HintPath>
+          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.7.254\lib\net461\WebSharper.InterfaceGenerator.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.JQuery">
-          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.6.253\lib\net461\WebSharper.JQuery.dll</HintPath>
+          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.7.254\lib\net461\WebSharper.JQuery.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.JavaScript">
-          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.6.253\lib\net461\WebSharper.JavaScript.dll</HintPath>
+          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.7.254\lib\net461\WebSharper.JavaScript.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.Main">
-          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.6.253\lib\net461\WebSharper.Main.dll</HintPath>
+          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.7.254\lib\net461\WebSharper.Main.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.Sitelets">
-          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.6.253\lib\net461\WebSharper.Sitelets.dll</HintPath>
+          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.7.254\lib\net461\WebSharper.Sitelets.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.Web">
-          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.6.253\lib\net461\WebSharper.Web.dll</HintPath>
+          <HintPath>..\..\..\Users\tarmil\.nuget\packages\websharper\4.2.7.254\lib\net461\WebSharper.Web.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
       </ItemGroup>
     </When>
   </Choose>
-  <Import Project="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\build\WebSharper.CSharp.targets" Condition="Exists('..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\build\WebSharper.CSharp.targets')" Label="Paket" />
+  <Import Project="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\build\WebSharper.CSharp.targets" Condition="Exists('..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\build\WebSharper.CSharp.targets')" Label="Paket" />
   <ItemGroup>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\FSharp.Core.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\FSharp.Core.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\Microsoft.DotNet.PlatformAbstractions.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\Microsoft.DotNet.PlatformAbstractions.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\Microsoft.Extensions.DependencyModel.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\Microsoft.Extensions.DependencyModel.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\Mono.Cecil.Mdb.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\Mono.Cecil.Mdb.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\Mono.Cecil.Pdb.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\Mono.Cecil.Pdb.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\Mono.Cecil.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\Mono.Cecil.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\WebSharper.CSharp.Analyzer.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\WebSharper.CSharp.Analyzer.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\WebSharper.Compiler.CSharp.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\WebSharper.Compiler.CSharp.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\WebSharper.Compiler.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\WebSharper.Compiler.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\WebSharper.Core.JavaScript.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\WebSharper.Core.JavaScript.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\WebSharper.Core.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\WebSharper.Core.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\WebSharper.InterfaceGenerator.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\WebSharper.InterfaceGenerator.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.6.253\analyzers\dotnet\cs\netstandard.dll">
+    <Analyzer Include="..\..\..\Users\tarmil\.nuget\packages\websharper.csharp\4.2.7.254\analyzers\dotnet\cs\netstandard.dll">
       <Paket>True</Paket>
     </Analyzer>
   </ItemGroup>
