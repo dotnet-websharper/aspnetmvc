@@ -10,8 +10,8 @@ nuget WebSharper.FSharp prerelease
 nuget WebSharper.CSharp prerelease
 nuget Microsoft.AspNet.Mvc 4.0.30506
 nuget FSharp.Core ~> 4.2.0
-nuget WebSharper.UI
-nuget WebSharper.UI.CSharp
+nuget WebSharper.UI prerelease
+nuget WebSharper.UI.CSharp prerelease
 
 group test
     framework: net461
