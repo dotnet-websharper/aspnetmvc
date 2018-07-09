@@ -26,7 +26,7 @@ namespace WebSharper.AspNetMvc.Tests
                     button("Send to server", async () =>
                     {
                         var s = await Rpc.ServerFunc(v.Value);
-                        JSModule.Alert(s);
+                        JS.Alert(s);
                     })
                 );
             }
