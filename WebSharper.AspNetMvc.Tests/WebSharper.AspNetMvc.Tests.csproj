@@ -360,22 +360,22 @@
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6.1'">
       <ItemGroup>
         <Reference Include="WebSharper.UI">
-          <HintPath>..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui\4.4.0.131\lib\net461\WebSharper.UI.dll</HintPath>
+          <HintPath>..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui\4.4.1.137\lib\net461\WebSharper.UI.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.UI.Templating">
-          <HintPath>..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui\4.4.0.131\lib\net461\WebSharper.UI.Templating.dll</HintPath>
+          <HintPath>..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui\4.4.1.137\lib\net461\WebSharper.UI.Templating.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.UI.Templating.Common">
-          <HintPath>..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui\4.4.0.131\lib\net461\WebSharper.UI.Templating.Common.dll</HintPath>
+          <HintPath>..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui\4.4.1.137\lib\net461\WebSharper.UI.Templating.Common.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
         <Reference Include="WebSharper.UI.Templating.Runtime">
-          <HintPath>..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui\4.4.0.131\lib\net461\WebSharper.UI.Templating.Runtime.dll</HintPath>
+          <HintPath>..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui\4.4.1.137\lib\net461\WebSharper.UI.Templating.Runtime.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
@@ -386,25 +386,25 @@
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6.1'">
       <ItemGroup>
         <Reference Include="WebSharper.UI.CSharp">
-          <HintPath>..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.0.131\lib\net461\WebSharper.UI.CSharp.dll</HintPath>
+          <HintPath>..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.1.137\lib\net461\WebSharper.UI.CSharp.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
       </ItemGroup>
     </When>
   </Choose>
-  <Import Project="..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.0.131\build\WebSharper.UI.CSharp.targets" Condition="Exists('..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.0.131\build\WebSharper.UI.CSharp.targets')" Label="Paket" />
+  <Import Project="..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.1.137\build\WebSharper.UI.CSharp.targets" Condition="Exists('..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.1.137\build\WebSharper.UI.CSharp.targets')" Label="Paket" />
   <ItemGroup>
-    <Analyzer Include="..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.0.131\analyzers\dotnet\cs\HtmlAgilityPack.dll">
+    <Analyzer Include="..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.1.137\analyzers\dotnet\cs\HtmlAgilityPack.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.0.131\analyzers\dotnet\cs\WebSharper.UI.CSharp.Templating.Analyzer.dll">
+    <Analyzer Include="..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.1.137\analyzers\dotnet\cs\WebSharper.UI.CSharp.Templating.Analyzer.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.0.131\analyzers\dotnet\cs\WebSharper.UI.CSharp.Templating.dll">
+    <Analyzer Include="..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.1.137\analyzers\dotnet\cs\WebSharper.UI.CSharp.Templating.dll">
       <Paket>True</Paket>
     </Analyzer>
-    <Analyzer Include="..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.0.131\analyzers\dotnet\cs\WebSharper.UI.Templating.Common.dll">
+    <Analyzer Include="..\..\..\..\Users\jenkins.WIN-DRS439ROKOT\.nuget\packages\websharper.ui.csharp\4.4.1.137\analyzers\dotnet\cs\WebSharper.UI.Templating.Common.dll">
       <Paket>True</Paket>
     </Analyzer>
   </ItemGroup>
