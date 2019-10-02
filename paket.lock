@@ -3,7 +3,7 @@ RESTRICTION: == net461
 NUGET
   remote: https://api.nuget.org/v3/index.json
     FSharp.Core (4.2.3)
-    HtmlAgilityPack (1.11.12)
+    HtmlAgilityPack (1.11.15)
     Microsoft.AspNet.Mvc (4.0.30506)
       Microsoft.AspNet.Razor (>= 2.0.20710)
       Microsoft.AspNet.WebPages (>= 2.0.20710)
@@ -14,20 +14,20 @@ NUGET
     Microsoft.Web.Infrastructure (1.0)
     System.Xml.XDocument (4.3)
   remote: https://daily.websharper.com/nuget
-    WebSharper (4.5.16.344)
+    WebSharper (4.5.19.349)
       FSharp.Core (>= 4.2.3)
-    WebSharper.CSharp (4.5.16.344)
-      WebSharper (4.5.16.344)
-    WebSharper.FSharp (4.5.16.344)
-      WebSharper (4.5.16.344)
-    WebSharper.UI (4.5.12.178)
+    WebSharper.CSharp (4.5.19.349)
+      WebSharper (4.5.19.349)
+    WebSharper.FSharp (4.5.19.349)
+      WebSharper (4.5.19.349)
+    WebSharper.UI (4.5.13.180)
       HtmlAgilityPack (>= 1.7.1)
       System.Xml.XDocument (>= 4.3)
-      WebSharper (>= 4.5.16 < 4.6)
-    WebSharper.UI.CSharp (4.5.12.178)
+      WebSharper (>= 4.5.19 < 4.6)
+    WebSharper.UI.CSharp (4.5.13.180)
       System.Xml.XDocument (>= 4.3 < 5.0)
-      WebSharper (>= 4.5.16 < 4.6)
-      WebSharper.UI (4.5.12.178)
+      WebSharper (>= 4.5.19 < 4.6)
+      WebSharper.UI (4.5.13.180)
 
 GROUP build
 RESTRICTION: == net45
