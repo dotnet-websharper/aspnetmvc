@@ -252,7 +252,7 @@
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6.1'">
       <ItemGroup>
         <Reference Include="HtmlAgilityPack">
-          <HintPath>C:\Users\andra\.nuget\packages\htmlagilitypack\1.11.29\lib\Net45\HtmlAgilityPack.dll</HintPath>
+          <HintPath>C:\Users\andra\.nuget\packages\htmlagilitypack\1.7.1\lib\Net45\HtmlAgilityPack.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>

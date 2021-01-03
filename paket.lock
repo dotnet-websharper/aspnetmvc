@@ -1,15 +1,16 @@
 STORAGE: NONE
+STRATEGY: MIN
 RESTRICTION: == net461
 NUGET
   remote: https://api.nuget.org/v3/index.json
     FSharp.Core (4.2.3)
-    HtmlAgilityPack (1.11.29)
+    HtmlAgilityPack (1.7.1)
     Microsoft.AspNet.Mvc (4.0.30506)
       Microsoft.AspNet.Razor (>= 2.0.20710)
       Microsoft.AspNet.WebPages (>= 2.0.20710)
-    Microsoft.AspNet.Razor (3.2.7)
-    Microsoft.AspNet.WebPages (3.2.7)
-      Microsoft.AspNet.Razor (>= 3.2.7 < 3.3)
+    Microsoft.AspNet.Razor (2.0.20710)
+    Microsoft.AspNet.WebPages (2.0.20710)
+      Microsoft.AspNet.Razor (>= 2.0.20710 < 2.1)
       Microsoft.Web.Infrastructure (>= 1.0)
     Microsoft.Web.Infrastructure (1.0)
     WebSharper (4.7.0.423)
