@@ -3,7 +3,7 @@ RESTRICTION: == net461
 NUGET
   remote: https://api.nuget.org/v3/index.json
     FSharp.Core (4.2.3)
-    HtmlAgilityPack (1.11.28)
+    HtmlAgilityPack (1.11.29)
     Microsoft.AspNet.Mvc (4.0.30506)
       Microsoft.AspNet.Razor (>= 2.0.20710)
       Microsoft.AspNet.WebPages (>= 2.0.20710)
@@ -12,7 +12,6 @@ NUGET
       Microsoft.AspNet.Razor (>= 3.2.7 < 3.3)
       Microsoft.Web.Infrastructure (>= 1.0)
     Microsoft.Web.Infrastructure (1.0)
-  remote: https://daily.websharper.com/nuget
     WebSharper (4.7.0.423)
       FSharp.Core (>= 4.2.3)
     WebSharper.CSharp (4.7.0.423)
@@ -25,24 +24,6 @@ NUGET
     WebSharper.UI.CSharp (4.7.0.231)
       WebSharper (>= 4.7 < 4.8)
       WebSharper.UI (4.7.0.231)
-
-GROUP build
-RESTRICTION: == net45
-NUGET
-  remote: https://api.nuget.org/v3/index.json
-    Chessie (0.6)
-      FSharp.Core
-    FAKE (5.16)
-    FSharp.Compiler.Tools (10.2.3)
-    FSharp.Core (5.0)
-    Mono.Cecil (0.11.3)
-    Newtonsoft.Json (12.0.3)
-    Paket.Core (5.141)
-      Chessie (>= 0.6)
-      FSharp.Compiler.Tools
-      FSharp.Core
-      Mono.Cecil (>= 0.10.0-beta6)
-      Newtonsoft.Json
 
 GROUP test
 RESTRICTION: == net461
@@ -99,4 +80,4 @@ GROUP wsbuild
 
 GIT
   remote: https://github.com/dotnet-websharper/build-script
-     (90eb54d1b2a21f568f22409b47814a7cf215900d)
+     (7155f2cb840374092cbe8eb2c8f1399c5c97f4af)
