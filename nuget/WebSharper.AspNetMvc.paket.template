@@ -14,5 +14,5 @@ files
     ../WebSharper.AspNetMvc/bin/Release/net461/WebSharper.AspNetMvc.dll ==> lib/net461
     ../WebSharper.AspNetMvc/bin/Release/net461/WebSharper.AspNetMvc.xml ==> lib/net461
 dependencies
-        WebSharper ~> LOCKEDVERSION/3
+        WebSharper ~> LOCKEDVERSION:[3]
         Microsoft.AspNet.Mvc >= LOCKEDVERSION

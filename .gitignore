@@ -6,7 +6,6 @@ obj/
 /build/
 paket-files/
 .fake/
-/nuget/*.paket.template
 *.user
 /WebSharper.AspNetMvc.Tests/Scripts/WebSharper/
 /WebSharper.AspNetMvc.Tests/Content/WebSharper/
