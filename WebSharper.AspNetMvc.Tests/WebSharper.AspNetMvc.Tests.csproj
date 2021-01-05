@@ -230,7 +230,6 @@
   </Target>
   <Target Name="AfterBuild">
   </Target> -->
-  <Import Project="..\.paket\paket.targets" />
   <ItemGroup>
     <ProjectReference Include="..\WebSharper.AspNetMvc\WebSharper.AspNetMvc.fsproj">
       <Project>{d3dd205c-f057-4cd0-a98d-22d8458b647d}</Project>
