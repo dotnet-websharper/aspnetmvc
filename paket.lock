@@ -15,19 +15,19 @@ NUGET
     Microsoft.Web.Infrastructure (1.0)
     System.Reflection.Emit.Lightweight (4.3)
   remote: https://daily.websharper.com/nuget
-    WebSharper (4.7.1.425)
+    WebSharper (4.7.1.426)
       FSharp.Core (>= 4.2.3)
       System.Reflection.Emit.Lightweight (>= 4.3)
-    WebSharper.CSharp (4.7.1.425)
-      WebSharper (4.7.1.425)
-    WebSharper.FSharp (4.7.1.425)
-      WebSharper (4.7.1.425)
-    WebSharper.UI (4.7.1.233)
+    WebSharper.CSharp (4.7.1.426)
+      WebSharper (4.7.1.426)
+    WebSharper.FSharp (4.7.1.426)
+      WebSharper (4.7.1.426)
+    WebSharper.UI (4.7.1.234)
       HtmlAgilityPack (>= 1.7.1)
       WebSharper (>= 4.7.1 < 4.8)
-    WebSharper.UI.CSharp (4.7.1.233)
+    WebSharper.UI.CSharp (4.7.1.234)
       WebSharper (>= 4.7.1 < 4.8)
-      WebSharper.UI (4.7.1.233)
+      WebSharper.UI (4.7.1.234)
 
 GROUP test
 RESTRICTION: == net461
