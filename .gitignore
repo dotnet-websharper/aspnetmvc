@@ -10,3 +10,5 @@ paket-files/
 /WebSharper.AspNetMvc.Tests/Scripts/WebSharper/
 /WebSharper.AspNetMvc.Tests/Content/WebSharper/
 /.vs/
+/WebSharper.AspNetMvc.Tests/build/
+/WebSharper.AspNetMvc.Tests/wwwroot/Scripts/WebSharper

@@ -6,13 +6,15 @@
       "version": "5.20.3",
       "commands": [
         "fake"
-      ]
+      ],
+      "rollForward": false
     },
     "paket": {
-      "version": "5.257.0",
+      "version": "9.0.2",
       "commands": [
         "paket"
-      ]
+      ],
+      "rollForward": false
     }
   }
 }

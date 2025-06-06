@@ -1,3 +1,6 @@
-﻿{
-  "project": "site"
+{
+  "$schema": "https://websharper.com/wsconfig.schema.json",
+  "project": "web",
+  "outputDir": "build",
+  "preBundle": true
 }
